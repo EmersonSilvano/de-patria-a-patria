@@ -1,8 +1,14 @@
-# Projeto 2: Biblioteca Triple Peaks
+# De Pátria para Pátria
 
-A página da biblioteca Triple Peaks é o segundo projeto no programa de desenvolvimento web na TripleTen. Ela foi criada usando HTML e CSS, com base no roteiro.
+Projeto 5 do curso TripleTen.
 
-## Recursos do projeto
-
-- HTML5 semântico
+## Tecnologias usadas
+- HTML5
+- CSS3
+- Metodologia BEM
 - Flexbox
+- Media Queries
+
+## GitHub Pages
+
+(https://github.com/EmersonSilvano/de-patria-a-patria)
