@@ -1,0 +1,30 @@
+.intro {
+  max-width: 830px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro__title {
+  font-size: 54px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.intro__subtitle {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.intro__quote {
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: right;
+  margin: 0;
+}
+
+.intro__description {
+  font-size: 16px;
+  line-height: 1.6;
+}
