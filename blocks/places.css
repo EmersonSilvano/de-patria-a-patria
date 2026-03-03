@@ -1,0 +1,149 @@
+.places {
+  display: flex;
+  flex-direction: column;
+  gap: 92px;
+}
+
+/* ===== DESKTOP 1280 ===== */
+
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  column-gap: 40px;
+  row-gap: 48px;
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+.place__title {
+  grid-column: 1;
+  grid-row: 1;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  margin: 0;
+}
+
+.place__image {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.place__button {
+  grid-column: 1;
+  grid-row: 3;
+
+  max-width: 356px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 20px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 1) 0%,
+    rgba(0, 58, 123, 1) 100%
+  );
+
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.place__artists {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+}
+
+.place__artist-label {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.place__artist {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.place__content {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.place__paragraph {
+  margin: 0 0 25px 0;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+/* ===== TABLET 768 ===== */
+
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .place {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    column-gap: 28px;
+    row-gap: 32px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__image {
+    max-width: 340px;
+    height: auto;
+    aspect-ratio: auto;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .place__button {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 544px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .place__artist-label {
+    justify-content: flex-start;
+  }
+}
